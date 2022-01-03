@@ -1,4 +1,4 @@
-# Syndicate-Bank-solidity
+# Syndicate-Bank-solidity. Challenge complete******
 secured contract . Completed challange as stated below.
 
 
@@ -24,7 +24,7 @@ Your **primary task** is to help secure Bank.sol. Some resources that may help:
 
 Your **optional secondary task** (which is optional but will stand out significantly if you complete it) is to add a fee calculation to Bank.sol. The bank needs to receive a 0.3% fee on every withdrawal of DAI. This isn't as simple as it sounds! Solidity only supports math on integers. Therefore, you need everything to be in `wei`, which is the smallest unit for Ethereum. As an example, the DAI balance on Etherscan for the address [0xF977814e90dA44bFA03b6295A0616a897441aceC](https://etherscan.io/address/0xF977814e90dA44bFA03b6295A0616a897441aceC) may be $25,039,869 (reported in ether by Etherscan), but its balance in `daiContract.methods.balanceOf(daiWhale).call()` is 25035868999999999999995000 (reported in wei by web3.js). (The value of DAI in the wallet will fluctuate, but the underlying principle remains the same.) This token division is represented in [decimals](https://docs.openzeppelin.com/contracts/3.x/erc20#a-note-on-decimals), which is a property available in [ERC20.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol#L84). Note that DAI has 18 decimals (the default). For more, take a look at the Solidity docs on [units](https://docs.soliditylang.org/en/v0.7.6/units-and-global-variables.html) and [division](https://docs.soliditylang.org/en/v0.7.6/types.html#division).
 
-If you really want to go **above and beyond with an optional tertiary task**, you can modify Bank.sol to support multiple users. The Bank.sol contract only supports a single user at the moment, but handling deposits and withdrawals for multiple users would stand out significantly and greatly exceed our expectations.
+If you really want to go **above and beyond with an optional tertiary task**, you can modify  Bank.sol to support multiple users. The Bank.sol contract only supports a single user at the moment, but handling deposits and withdrawals for multiple users would stand out significantly and greatly exceed our expectations.
 
 This project is well compensated to give you the time you need to properly secure Bank.sol and work on the optional tasks. The more thorough you are in ensuring the contract's security and completing the optional tasks, the better you'll perform.
 
